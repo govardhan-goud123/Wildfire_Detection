@@ -4,15 +4,15 @@
 
 ### Deep Learning | Computer Vision | TensorFlow
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3000&pause=800&color=00F5FF&center=true&vCenter=true&width=650&lines=Intelligent+Wildfire+Image+Classification;Powered+by+TensorFlow+and+MobileNetV2;Fire+vs+No+Fire+Classification" alt="Animated project introduction">
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3000&pause=800&color=00F5FF&center=true&vCenter=true&width=700&lines=Intelligent+Wildfire+Image+Classification;Powered+by+TensorFlow+and+MobileNetV2;Fire+vs+No+Fire+Classification" alt="Animated project introduction">
 
 <br>
 
-<img src="https://img.shields.io/badge/PYTHON-0A0A0A?style=for-the-badge&logo=python&logoColor=00F5FF">
-<img src="https://img.shields.io/badge/TENSORFLOW-0A0A0A?style=for-the-badge&logo=tensorflow&logoColor=FF8C00">
-<img src="https://img.shields.io/badge/KERAS-0A0A0A?style=for-the-badge&logo=keras&logoColor=FF00FF">
-<img src="https://img.shields.io/badge/STREAMLIT-0A0A0A?style=for-the-badge&logo=streamlit&logoColor=00FFB2">
-<img src="https://img.shields.io/badge/COMPUTER_VISION-0A0A0A?style=for-the-badge&logoColor=00F5FF">
+<img src="https://img.shields.io/badge/PYTHON-000000?style=for-the-badge&logo=python&logoColor=00F5FF">
+<img src="https://img.shields.io/badge/TENSORFLOW-000000?style=for-the-badge&logo=tensorflow&logoColor=FF8C00">
+<img src="https://img.shields.io/badge/KERAS-000000?style=for-the-badge&logo=keras&logoColor=FF00FF">
+<img src="https://img.shields.io/badge/STREAMLIT-000000?style=for-the-badge&logo=streamlit&logoColor=00FFB2">
+<img src="https://img.shields.io/badge/COMPUTER_VISION-000000?style=for-the-badge&logoColor=00F5FF">
 
 <br><br>
 
@@ -36,10 +36,10 @@ The goal is to demonstrate a complete computer vision workflow, from dataset pre
 
 ## 02. System Architecture
 
-The following diagram illustrates the project's end-to-end workflow.
+The following diagram illustrates the end-to-end workflow of the project.
 
 ```mermaid
-%%{init: {"theme":"dark","themeVariables":{"background":"#050816","primaryColor":"#111827","primaryTextColor":"#E5F7FF","primaryBorderColor":"#00F5FF","lineColor":"#A855F7","secondaryColor":"#10152A","tertiaryColor":"#0B1220","edgeLabelBackground":"#050816","fontFamily":"monospace"}}}%%
+%%{init: {"theme":"dark","themeVariables":{"background":"#000000","primaryColor":"#050505","primaryTextColor":"#FFFFFF","primaryBorderColor":"#00F5FF","lineColor":"#A855F7","secondaryColor":"#080808","tertiaryColor":"#000000","edgeLabelBackground":"#000000","fontFamily":"monospace"}}}%%
 flowchart TD
     A["WILDFIRE IMAGE DATASET"] --> B["IMAGE LOADING AND PREPROCESSING"]
     B --> C["MOBILENETV2 TRANSFER LEARNING"]
@@ -52,10 +52,10 @@ flowchart TD
     I --> J["FIRE"]
     I --> K["NO FIRE"]
 
-    classDef input fill:#071D2B,stroke:#00F5FF,color:#E5F7FF,stroke-width:2px
-    classDef processing fill:#17102E,stroke:#A855F7,color:#F5E9FF,stroke-width:2px
-    classDef output fill:#06251D,stroke:#00FFB2,color:#D7FFF2,stroke-width:2px
-    classDef decision fill:#27162A,stroke:#FF4FD8,color:#FFE5FA,stroke-width:2px
+    classDef input fill:#000000,stroke:#00F5FF,color:#FFFFFF,stroke-width:2px
+    classDef processing fill:#000000,stroke:#A855F7,color:#FFFFFF,stroke-width:2px
+    classDef output fill:#000000,stroke:#00FFB2,color:#FFFFFF,stroke-width:2px
+    classDef decision fill:#000000,stroke:#FF4FD8,color:#FFFFFF,stroke-width:2px
 
     class A,H input
     class B,C,D,E,F,G processing
@@ -69,17 +69,17 @@ flowchart TD
 
 | Feature                | Description                                               |
 | ---------------------- | --------------------------------------------------------- |
-| Image classification   | Classifies images into fire and no-fire categories        |
-| Transfer learning      | Uses MobileNetV2 as the pretrained model backbone         |
-| Deep learning          | Built with TensorFlow and Keras                           |
-| Model training         | Provides a Python training script                         |
-| Model persistence      | Saves the trained model in Keras format                   |
-| Interactive interface  | Uses Streamlit for image uploads and predictions          |
-| Modular implementation | Separates training, model utilities, and application code |
+| Image Classification   | Classifies images into fire and no-fire categories        |
+| Transfer Learning      | Uses MobileNetV2 as the pretrained model backbone         |
+| Deep Learning          | Built with TensorFlow and Keras                           |
+| Model Training         | Provides a Python training script                         |
+| Model Persistence      | Saves the trained model in Keras format                   |
+| Interactive Interface  | Uses Streamlit for image uploads and predictions          |
+| Modular Implementation | Separates training, model utilities, and application code |
 
 ## 04. Technology Stack
 
-| Technology  | Role                                     |
+| Technology  | Purpose                                  |
 | ----------- | ---------------------------------------- |
 | Python      | Core programming language                |
 | TensorFlow  | Deep learning framework                  |
@@ -120,20 +120,20 @@ The trained model file is created after successful training. Its presence depend
 
 ## 06. Installation
 
-### Clone the repository
+### Step 1. Clone the Repository
 
 ```bash
 git clone https://github.com/govardhan-goud123/Wildfire_Detection.git
 cd Wildfire_Detection
 ```
 
-### Create a virtual environment
+### Step 2. Create a Virtual Environment
 
 ```bash
 python -m venv .venv
 ```
 
-### Activate the environment
+### Step 3. Activate the Environment
 
 Windows PowerShell:
 
@@ -147,7 +147,7 @@ Windows Command Prompt:
 .venv\Scripts\activate.bat
 ```
 
-### Install dependencies
+### Step 4. Install Dependencies
 
 ```bash
 python -m pip install --upgrade pip
@@ -188,7 +188,7 @@ streamlit run wildfire_detection_app.py
 
 Open the local address displayed in the terminal.
 
-### Prediction workflow
+### Prediction Workflow
 
 1. Launch the application.
 2. Train the model if a trained model is not available.
@@ -204,8 +204,8 @@ Reliable evaluation is important for image classification, particularly when fal
 | Accuracy          | Measures the proportion of correct predictions                             |
 | Precision         | Measures the proportion of predicted fire cases that are actual fire cases |
 | Recall            | Measures the proportion of actual fire cases correctly classified          |
-| F1-score          | Combines precision and recall                                              |
-| Confusion matrix  | Shows correct and incorrect predictions by class                           |
+| F1-Score          | Combines precision and recall                                              |
+| Confusion Matrix  | Shows correct and incorrect predictions by class                           |
 
 Actual performance values should be added after evaluating the trained model on an appropriate test dataset.
 
@@ -213,18 +213,18 @@ No accuracy or performance score is claimed here because verified evaluation res
 
 ## 10. Development Roadmap
 
-The following are potential future improvements.
+The following diagram shows potential future improvements.
 
 ```mermaid
-%%{init: {"theme":"dark","themeVariables":{"background":"#050816","primaryColor":"#111827","primaryTextColor":"#E5F7FF","primaryBorderColor":"#00F5FF","lineColor":"#A855F7","fontFamily":"monospace"}}%%
+%%{init: {"theme":"dark","themeVariables":{"background":"#000000","primaryColor":"#050505","primaryTextColor":"#FFFFFF","primaryBorderColor":"#00F5FF","lineColor":"#A855F7","secondaryColor":"#080808","tertiaryColor":"#000000","edgeLabelBackground":"#000000","fontFamily":"monospace"}}}%%
 flowchart LR
     A["CURRENT PROJECT"] --> B["MODEL EVALUATION"]
     B --> C["VISUAL EXPLANATIONS"]
     C --> D["VIDEO CLASSIFICATION"]
     D --> E["DEPLOYMENT"]
 
-    classDef current fill:#071D2B,stroke:#00F5FF,color:#E5F7FF,stroke-width:2px
-    classDef future fill:#17102E,stroke:#A855F7,color:#F5E9FF,stroke-width:2px
+    classDef current fill:#000000,stroke:#00F5FF,color:#FFFFFF,stroke-width:2px
+    classDef future fill:#000000,stroke:#A855F7,color:#FFFFFF,stroke-width:2px
 
     class A current
     class B,C,D,E future
@@ -241,7 +241,7 @@ Potential enhancements include:
 * Evaluation on more diverse environmental images.
 * Deployment for broader accessibility.
 
-These items are planned possibilities, not features claimed to be implemented.
+These items are possible future improvements, not features claimed to be implemented.
 
 ## 11. Limitations and Safety
 
@@ -282,7 +282,7 @@ AI and Data Science | Machine Learning | Deep Learning | Computer Vision
 
 **WILDFIRE DETECTION AI**
 
-TensorFlow · Keras · MobileNetV2 · Streamlit
+TensorFlow | Keras | MobileNetV2 | Streamlit
 
 Developed as a practical exploration of deep learning for environmental image classification.
 
